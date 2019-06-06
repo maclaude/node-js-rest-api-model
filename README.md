@@ -22,8 +22,8 @@ cd project-repository
 - Execute the following commands to copy folders / files / hidden files inside your project folder
 
 ```
-# Recursive copy of the model folder
-cp -R ../node-js-model-rest-api/ .
+# Recursive copy of the model folder (excluding .git directory)
+rsync -r --exclude '.git' ../node-js-rest-api-model/ .
 ```
 
 3. #### Install the dependencies
